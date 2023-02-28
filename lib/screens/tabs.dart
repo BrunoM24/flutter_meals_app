@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:meals_app/screens/categories.dart';
 import 'package:meals_app/screens/favorites.dart';
+import 'package:meals_app/widgets/drawer.dart';
 
 class Tabs extends StatefulWidget {
   const Tabs({Key? key}) : super(key: key);
@@ -21,6 +22,7 @@ class _TabsState extends State<Tabs> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Meals')),
+      drawer: const MainDrawer(),
       body: _screens.elementAt(_currentIndex),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Theme.of(context).primaryColor,

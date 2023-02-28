@@ -5,6 +5,15 @@ void main() {
   runApp(const MyApp());
 }
 
+Map<String, bool> _filters = {
+  'gluten': false,
+  'lactose': false,
+  'vegetarian': false,
+  'vegan': false,
+};
+
+void setFilters() {}
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
